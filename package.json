@@ -4,18 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/S1venJY/DevOps5.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/S1venJY/DevOps5/issues"
-  },
-  "homepage": "https://github.com/S1venJY/DevOps5#readme"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node index.js"
+  }
 }
