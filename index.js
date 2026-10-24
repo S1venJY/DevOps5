@@ -1,1 +1,1 @@
-echo "console.log('Build and run successful!');"
+console.log('Build and run successful!');
