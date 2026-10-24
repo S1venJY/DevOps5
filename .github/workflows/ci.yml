@@ -1,0 +1,30 @@
+name: Node.js CI
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Завантаження коду репозиторію
+        uses: actions/checkout@v4
+
+      - name: Установлення Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Установлення залежностей (npm install)
+        run: npm install
+
+      - name: Запуск білду (npm run build)
+        run: npm run build
+
+      - name: Збереження результату білду як артефакту
+        uses: actions/upload-artifact@v4
+        with:
+          name: node-app-build
+          path: .
